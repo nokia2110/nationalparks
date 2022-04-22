@@ -1,4 +1,4 @@
-FROM gcr.io/cloud-builders/mvn:latest AS builder
+FROM dockerhub.aicloud.io/isi-dingning-test/mvn:latest AS builder
 WORKDIR /tmp
 COPY . .
 RUN mvn --no-transfer-progress verify package
